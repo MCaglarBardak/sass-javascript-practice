@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Example</title>
+</head>
+
+<body>
+    <div class="backToTop" onclick=backToTop()><i class="fa-solid fa-angle-up"></i></div>
+    <!--Header-->
+    <header class="header-area">
+        <div class="top">
+            <div class="number">
+                <span><i class="icon1 fa-sharp fa-solid fa-phone"></i>0543 543 5430</span>
+            </div>
+            <div class="container_top">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="navbar">
+            <div class="container_navbar">
+                <span class="logo"><i class="fa-solid fa-suitcase-medical"></i> REAL HOSPİTAL</span>
+            </div>
+            <div class="links">
+                <i onclick="onOff()" id="symbol" class="fa-solid fa-bars"></i>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#">Hakkında</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Vizyonumuz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Randevularım</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdownlink">Kategoriler </a>
+                        <div class="dropdown_menu">
+                            <a href="#">Polikinlik</a>
+                            <a href="#">Acil Servis</a>
+                            <a href="#">Ağır Hasta</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <i class="icon2 fa-solid fa-gear"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="icon3 fa-regular fa-user"></i>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <!--Main-->
+    <section class="main-area">
+        <div class="main">
+            <div class="slider active">
+                <div class="image">
+                    <span class="title"><i class="fa-solid fa-caret-right"></i> Uzman Doktor Kadrosu</span>
+                    <span class="title2"> <i class="fa-solid fa-caret-right"></i> Profesyonel Sağlık Çalışanları</span>
+                    <button type="button" class="button">Randevu Al<i
+                            class=" icon4 fa-solid fa-user-doctor"></i></button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="image">
+                    <span class="title"><i class="fa-solid fa-caret-right"></i> Uzman Doktor Kadrosu</span>
+                    <span class="title2"> <i class="fa-solid fa-caret-right"></i> Profesyonel Sağlık Çalışanları</span>
+                    <button type="button" class="button">Randevu Al<i
+                            class=" icon4 fa-solid fa-user-doctor"></i></button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="image">
+                    <span class="title"><i class="fa-solid fa-caret-right"></i> Uzman Doktor Kadrosu</span>
+                    <span class="title2"> <i class="fa-solid fa-caret-right"></i> Profesyonel Sağlık Çalışanları</span>
+                    <button type="button" class="button">Randevu Al<i
+                            class=" icon4 fa-solid fa-user-doctor"></i></button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="image">
+                    <span class="title"><i class="fa-solid fa-caret-right"></i> Uzman Doktor Kadrosu</span>
+                    <span class="title2"> <i class="fa-solid fa-caret-right"></i> Profesyonel Sağlık Çalışanları</span>
+                    <button type="button" id="button4" class="button">Randevu Al<i
+                            class=" icon4 fa-solid fa-user-doctor"></i></button>
+                </div>
+            </div>
+        </div>
+        <span class="title"><i class="fa-solid fa-caret-right"></i> Uzman Doktor Kadrosu</span>
+        <span class="title2"> <i class="fa-solid fa-caret-right"></i> Profesyonel Sağlık Çalışanları</span>
+        <button type="button" class="button">Randevu Al<i class=" icon4 fa-solid fa-user-doctor"></i></button>
+        <div class="buttons">
+            <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+        </div>
+    </section>
+    <!--About-->
+    <section class="about">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p class="close"><i class="fa-solid fa-circle-xmark"></i></p>
+                <form class="form">
+                    <h1>REAL HOSPITAL RANDEVU</h1>
+                    <label for="firstName">Adınız</label>
+                    <input type="text" id="firstName" name="firstname" placeholder="Adınız">
+
+                    <label for="lname">Soyadınız</label>
+                    <input type="text" id="surName" name="surName" placeholder="Soyadınız">
+
+                    <label for="city">Bulunduğunuz Şehir</label>
+                    <select id="city" name="city">
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="İzmir">İzmir</option>
+                        <option value="Ankara">Ankara</option>
+                    </select>
+
+                    <label for="policlinic">Poliklinik</label>
+                    <select id="policlinic" name="policlinic">
+                        <option value="Acil Servis">Acil Servis</option>
+                        <option value="Genel Cerrahi">Genel Cerrahi</option>
+                        <option value="Cildiye">Cildiye</option>
+                        <option value="Üroloji">Üroloji</option>
+                        <option value="Göz Hastalıkları">Göz Hastalıkları</option>
+                        <option value="Beslenme ve Diyet">Beslenme ve Diyet</option>
+                    </select>
+
+                    <label for="randevu">Randevu Tarihi:</label>
+                    <input type="datetime-local" id="meetingDate" name="meetingDate" class="tarih">
+                    <button class="modalButton">Randevu Al!</button>
+                </form>
+
+            </div>
+        </div>
+        <h1 class="about-title">Welcome to <span>REAL HOSPITAL</span> </h1>
+        <h4 class="about-description">Our medical specialists care about you & your family’s health</h4>
+        <div class="container_about">
+            <div class="box">
+                <i class="fa-solid fa-hospital"></i>
+                <h3>İyi Hizmet</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ad rem. Inventore corporis facere
+                    dolore asperiores amet eius, provident dolor qui omnis a suscipit ipsam, ducimus laboriosam aut
+                    ab doloribus!</p>
+                <button class="box_button">Detaylı Bilgi</button>
+                <div class="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet porro minima voluptatem.
+                        Dolor fuga libero, nostrum voluptatum aut magni, facilis incidunt facere iste possimus quos
+                        reprehenderit rerum vel praesentium.
+                        Voluptate rerum expedita nemo iusto! Eligendi nostrum eos itaque consequuntur ut sequi omnis
+                        exercitationem sapiente nobis, delectus labore facilis molestias, dolore voluptate perspiciatis!
+                        Fugit, omnis temporibus. Perspiciatis amet tempora vel.
+                        Cumque ab aliquam veritatis doloribus quod eum delectus eligendi necessitatibus vitae harum,
+                        magni nobis excepturi quas. Perferendis labore voluptatibus iusto voluptas. Adipisci blanditiis
+                        provident laborum facilis iure sed odit eius.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-stethoscope"></i>
+                <h3>Düzenli Kontrol</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ad rem. Inventore corporis facere
+                    dolore asperiores amet eius, provident dolor qui omnis a suscipit ipsam, ducimus laboriosam aut
+                    ab
+                    doloribus!</p>
+                <button class="box_button">Detaylı Bilgi</button>
+                <div class="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet porro minima voluptatem.
+                        Dolor fuga libero, nostrum voluptatum aut magni, facilis incidunt facere iste possimus quos
+                        reprehenderit rerum vel praesentium.
+                        Voluptate rerum expedita nemo iusto! Eligendi nostrum eos itaque consequuntur ut sequi omnis
+                        exercitationem sapiente nobis, delectus labore facilis molestias, dolore voluptate perspiciatis!
+                        Fugit, omnis temporibus. Perspiciatis amet tempora vel.
+                        Cumque ab aliquam veritatis doloribus quod eum delectus eligendi necessitatibus vitae harum,
+                        magni nobis excepturi quas. Perferendis labore voluptatibus iusto voluptas. Adipisci blanditiis
+                        provident laborum facilis iure sed odit eius.
+                    </p>
+                </div>
+                <br>
+
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-star-of-life"></i>
+                <h3>Sadece Sağlık</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ad rem. Inventore corporis facere
+                    dolore asperiores amet eius, provident dolor qui omnis a suscipit ipsam, ducimus laboriosam aut
+                    ab
+                    doloribus!</p>
+                <button class="box_button">Detaylı Bilgi</button>
+                <div class="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet porro minima voluptatem.
+                        Dolor fuga libero, nostrum voluptatum aut magni, facilis incidunt facere iste possimus quos
+                        reprehenderit rerum vel praesentium.
+                        Voluptate rerum expedita nemo iusto! Eligendi nostrum eos itaque consequuntur ut sequi omnis
+                        exercitationem sapiente nobis, delectus labore facilis molestias, dolore voluptate perspiciatis!
+                        Fugit, omnis temporibus. Perspiciatis amet tempora vel.
+                        Cumque ab aliquam veritatis doloribus quod eum delectus eligendi necessitatibus vitae harum,
+                        magni nobis excepturi quas. Perferendis labore voluptatibus iusto voluptas. Adipisci blanditiis
+                        provident laborum facilis iure sed odit eius.
+
+                    </p>
+                </div>
+                <br>
+
+            </div>
+        </div>
+        <div class="container_info">
+            <div class="box">
+                <div class="info">
+                    <span><i class="fa-regular fa-clock"></i>Çalışma Saatlerimiz</span>
+                    <h2>Pazartesi - Cuma <i class="fa-solid fa-arrow-right"></i> 09.00 - 17.00</h2>
+                    <h2>Cumartesi - Pazar <i class="fa-solid fa-arrow-right"></i> 09.00 - 16.00</h2>
+                    <h1>Acil Servis <i class="fa-solid fa-arrow-right"></i> 7/24 saat açık</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About2-->
+    <footer class="footer">
+        <hr>
+        <div class="container">
+            <div class="contact">
+                <h2>İletişim Bilgileri</h2>
+                <p>İLETİŞİM: 278 Sokak Konak/İZMİR</p>
+                <p>E-POSTA: ornek.35@gmail.com</p>
+            </div>
+            <div class="commet">
+                (C) Copyright 2022 - Medical Theme . All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a class="backToTop"><i class="fa-solid fa-chevron-up"></i></i></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
